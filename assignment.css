@@ -1,0 +1,319 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+
+header {
+   
+    padding: 50px;
+   
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: palevioletred;
+    
+}
+
+nav h1 {
+    color: blueviolet;
+    font-size: 24px;
+    padding: 5px;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li {
+    display: inline;
+    
+    margin: 8px ;
+
+}
+.section-name:hover{
+    color: pink;
+}
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+/* Style the home section */
+.home-info {
+    height: 70vh;
+    text-align: center;
+    padding: 100px 0;
+    background-image: url(https://th.bing.com/th/id/OIP.DF6BDLR1c8mleZ5Rlu1dBwHaE0?pid=ImgDet&rs=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  
+
+  
+}
+
+.home-info h2 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.home-info p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #ffef0c60;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff2121a9;
+}
+
+/* Style the menu section */
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    border: 5px #efb446;
+    /* padding: 20px 0; */
+}
+
+.menu-item {
+    text-align: center;
+    width: 30%;
+}
+
+.menu-item img {
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Style the about and contact sections */
+.about-info,
+.contact-info,.location-info {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.about-info h2,
+.contact-info h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+.about-info p,
+.contact-info p,.location-info p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Style the footer */
+footer {
+    background-color: #efb446;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+
+
+    }
+    
+    .menu-item {
+        
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+span{
+    color: blueviolet;
+}
+.icons{
+    
+    display: flex;
+    justify-content:center;
+   /*  margin: 1% 40% 0% 40%; */
+    align-items: center;
+    
+
+}
+.contact_icons,.up{
+    
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 50px 10px ;
+    
+
+}
+.lk:hover{
+    color: rgb(0, 120, 224);
+    animation: forwards;
+
+}
+.gh:hover{
+    color: grey;
+}
+.twt:hover{
+    color: rgb(0, 136, 255);
+}
+.wp:hover{
+    color: rgb(105, 210, 0);
+}
+.fb:hover{
+    color: blue;
+}
+.is:hover{
+    color: rgb(204, 0, 99);
+}
+.copyrights{
+    margin: 20px;
+}
+.copytext{
+    text-align: center;
+}
+    
+.up{
+float:right;
+color: rgb(0, 0, 0);
+
+}
+.lk{
+    color: rgb(0, 0, 0);
+}
+.gh{
+    color: black;
+}
+.twt{
+    color: black;
+}
+.wp{
+    color: black;
+}
+.fb{
+    color: black;
+}
+.is{
+    color: black;
+}
+.contact_icons:hover,.up{
+    
+    background-image: linear-gradient(to bottom right, rgb(77, 64, 64), rgb(146, 136, 136));
+}
+.contact_icons:hover i{
+    /* color: rgb(255, 255, 255); */
+    animation: shake 2s infinite;
+    
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+      color: rgb(255, 255, 255);
+    }
+    20%{
+        transform: rotate(-15deg);
+    } 
+    80%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+.up:hover i{
+color: aliceblue;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.menulist{
+    margin-top: 10%;
+}
+.men{
+    color: #efb446;
+    text-align: center;
+    margin-top: 5%;
+}
+.download{
+   
+    background-color: rgb(0, 0, 0);
+    width: 0px;
+    height: 150px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 9px;
+    box-shadow: 0px 1px 2px 2px grey;
+    border-style: inset;
+    text-decoration: solid;
+}
+.order{
+    text-align: center;
+    margin-top: -100px;
+}
+.download:hover{
+    color: #ff0000;
+}
+.logobug{
+    margin-left: -830px;
+}
